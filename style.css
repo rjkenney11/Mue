@@ -1,0 +1,183 @@
+body {
+    background-image: url("https://user-images.githubusercontent.com/74163812/108749074-5a9a0500-750d-11eb-8d56-f4ebfd5cf52a.png");
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
+
+.jumbotron{
+    background-image: url( https://user-images.githubusercontent.com/74163812/108761393-cc2d7f80-751c-11eb-890f-328e32810924.jpg)!important ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-basis: auto;
+    height: 900px;
+    width: 750px;
+    margin-top:10px;
+    margin-left: 90px;
+    font-size: xx-large;
+    font-family: 'Molle', cursive;
+    text-align: center;
+    border:3px;
+    border-color: black;
+    border-style:solid; 
+}
+
+.display-4{
+    background-color: rosybrown;
+    font-family: 'Molle', cursive;
+    font-size: xx-large;
+    text-align: center;
+}
+
+.dropdown-button{
+    margin-top: 20px;
+}
+
+.fa-star{
+    margin-top: 30px;
+    color: pink;
+}
+
+.fa-guitar{
+    margin-top: 30px;
+    color: rgb(58, 15, 15);
+}
+
+.fa-pagelines{
+    margin-top: 30px;
+    color: rgb(1, 63, 1);
+}
+
+.fa-water{
+    margin-top: 30px;
+    color: rgb(3, 94, 94);
+}
+
+.fa-running{
+    margin-top: 30px;
+    color: rgb(226, 162, 42);
+}
+
+.fa-bug{
+    margin-top: 30px;
+    color: rgb(170, 162, 92);
+}
+
+.fa-umbrella{
+    margin-top: 30px;
+    color: black;
+}
+
+.fa-paw{
+    margin-top: 30px;
+    color: rgb(66, 2, 66);
+}
+
+.fa-leaf{
+    margin-top: 30px;
+    color: rgb(112, 167, 31);
+}
+
+.blur{
+    margin-top: 40px;
+    height: 500px;
+    width: 400px;
+}
+
+.blur2{
+    margin-top: 40px;
+    height: 300px;
+    width: 200px;
+}
+
+.dryad{
+    margin-top: 40px;
+    height: 500px;
+    width: 455px;
+}
+
+.dryad2{
+    margin-top: 40px;
+    height: 500px;
+    width: 180px;
+}
+
+.pixie{
+    margin-top: 40px;
+    height: 620px;
+    width: 355px;
+}
+
+.pixie2{
+    margin-top: 40px;
+    height: 300px;
+    width: 300px;
+}
+
+.navbar-brand{
+    margin-top: 20px;
+    font-size: 150% !important;
+    font-family: 'Molle', cursive;
+}
+
+.saytr{
+    margin-top: 40px;
+    height: 500px;
+    width: 375px;
+}
+
+.saytr2{
+    margin-top: 40px;
+    height: 350px;
+    width: 250px;
+}
+
+.hag{
+    margin-top: 40px;
+    height: 600px;
+    width: 550px;
+}
+
+.meenlock{
+    margin-top: 40px;
+    height: 600px;
+    width: 350px;
+}
+
+.meenlock2{
+    margin-top: 40px;
+    height: 250px;
+    width: 230px;
+}
+
+.sprite{
+    margin-top: 40px;
+    height: 300px;
+    width: 500px;
+}
+
+.sprite2{
+    margin-top: 40px;
+    height: 250px;
+    width: 230px;
+}
+
+.boggle{
+    margin-top: 40px;
+    height: 600px;
+    width: 550px;
+}
+
+.dark{
+    margin-top: 40px;
+    height: 500px;
+    width: 375px;
+}
+
+.dark2{
+    margin-top: 40px;
+    height: 350px;
+    width: 250px;
+}
