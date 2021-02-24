@@ -32,7 +32,37 @@
         integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
         crossorigin="anonymous"></script>
 
+    <div class="row">
+        <div class="column-1"></div>
+        <div class="containerStat">
+            <div class="card" id="str">
+                <input type="text" id="str2" name="str2">
+                Strength
+            </div>
+            <div class="card" id="dex">
+                <input type="text" id="str2" name="str2">
+                Dexterity
+            </div>
+            <div class="card" id="con">
+                <input type="text" id="str2" name="str2">
+                Constitution
+            </div>
+            <div class="card" id="intl">
+                <input type="text" id="str2" name="str2">
+                Intelligence
+            </div>
+            <div class="card" id="wis">
+                <input type="text" id="str2" name="str2">
+                Wisdom
+            </div>
+            <div class="card" id="charis">
+                <input type="text" id="str2" name="str2">
+                Charisma
+            </div>
+        </div>
+
     <div class="jumbotron">
+        <div class="column-2"></div>
         <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-left">
             <a class="navbar-brand" href="index.html">Mue <i class="fas fa-dice-d20"></i></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
@@ -120,32 +150,25 @@
 
         <div class="skills-container">
             <form action="text">
-                <ul>
+                <p>
                     <label>
                         <input type="checkbox" class="filled-in" id="acrobatics" unchecked="checked" />
                         <span>Acrobatics</span>
                         <input type="text" id="skill" name="acrobatics">
                     </label>
-                </ul>
-                <ul>
+                </p>
+                <p>
                     <label>
                         <input type="checkbox" class="filled-in" id="animal-handling" unchecked="checked" />
                         <span>Animal Hndl</span>
                         <input type="text" id="skill" name="animal-handling">
                     </label>
-                </ul>
+                </p>
                 <p>
                     <label>
                         <input type="checkbox" class="filled-in" id="arcana" unchecked="checked" />
                         <span>Arcana</span>
                         <input type="text" id="skill" name="arcana">
-                    </label>
-                </p>
-                <p>
-                    <label>
-                        <input type="checkbox" class="filled-in" id="athletics" unchecked="checked" />
-                        <span>Athletics</span>
-                        <input type="text" id="skill" name="athletics">
                     </label>
                 </p>
                 <p>
@@ -256,6 +279,7 @@
 
             </form>
         </div>
+    </div>
 
         <!--Save Button-->
         <a class="waves-effect waves-light btn" id="save-button">Save Mue</a>
@@ -263,7 +287,6 @@
 
 
     </div>
-    
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>

@@ -15,7 +15,7 @@ body {
     height: 900px;
     width: 750px;
     margin-top:10px;
-    margin-left: 90px;
+    margin-left: 30px;
     font-family: 'Molle', cursive;
     text-align: center;
     border:3px;
@@ -197,8 +197,10 @@ body {
     position: absolute;
     right:    0;
     top:   0;
-    margin-right: 5px;
+    margin-right: 15px;
     margin-top: 5px;
+    font-family: 'Molle', cursive;
+    text-align: center;
 }
 
 .dropdown-button{
@@ -220,6 +222,7 @@ body {
     border-color: black;
     border-style:solid; 
     overflow: auto;
+    font: black;
 }
 
 #arcana{
@@ -250,4 +253,88 @@ ul{
 
 p{
     margin:0px !important;
+}
+
+.containerStat{
+    grid-column: 1;
+    flex-direction: column;
+    margin-left: 50px;
+    margin-top: 75px;
+    font: rgb(223, 221, 221) !important;
+    
+}
+
+#str{
+    grid-column: 1;
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    font: rgb(223, 221, 221) !important;
+    margin-left: 5px;
+    margin-bottom: 35px;
+    font-family: 'Molle', cursive;
+    text-align: center;
+}
+#dex{
+    grid-column: 1;
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    font: rgb(223, 221, 221);
+    margin-left: 5px;
+    margin-bottom: 35px;
+    font-family: 'Molle', cursive;
+    text-align: center;
+}
+#con{
+    grid-column: 1;
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    font: rgb(223, 221, 221);
+    margin-left: 5px;
+    margin-bottom: 35px;
+    font-family: 'Molle', cursive;
+    text-align: center;
+}
+#intl{
+    grid-column: 1;
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    font: rgb(223, 221, 221);
+    margin-left: 5px;
+    margin-bottom: 35px;
+    font-family: 'Molle', cursive;
+    text-align: center;
+}
+#wis{
+    grid-column: 1;
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    font: rgb(223, 221, 221);
+    margin-left: 5px;
+    margin-bottom: 35px;
+    font-family: 'Molle', cursive;
+    text-align: center;
+}
+#charis{
+    grid-column: 1;
+    height: 100px;
+    width: 100px;
+    background-color: black;
+    font: rgb(223, 221, 221);
+    margin-left: 5px;
+    margin-bottom: 35px;
+    font-family: 'Molle', cursive;
+    text-align: center;
+}
+
+
+#str2{
+    height: 75px !important;
+    font-family: 'Molle', cursive;
+    text-align: center;
+    font: rgb(223, 221, 221) !important;
 }
