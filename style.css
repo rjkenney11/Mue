@@ -16,7 +16,6 @@ body {
     width: 750px;
     margin-top:10px;
     margin-left: 90px;
-    font-size: xx-large;
     font-family: 'Molle', cursive;
     text-align: center;
     border:3px;
@@ -27,7 +26,6 @@ body {
 .display-4{
     background-color: rosybrown;
     font-family: 'Molle', cursive;
-    font-size: xx-large;
     text-align: center;
 }
 
@@ -116,8 +114,12 @@ body {
     width: 300px;
 }
 
+.navbar{
+    margin-bottom: 20px;
+}
+
 .navbar-brand{
-    margin-top: 20px;
+    margin-top: 10px;
     font-size: 150% !important;
     font-family: 'Molle', cursive;
 }
@@ -160,8 +162,8 @@ body {
 
 .sprite2{
     margin-top: 40px;
-    height: 250px;
-    width: 230px;
+    height: 350px;
+    width: 330px;
 }
 
 .boggle{
@@ -180,4 +182,72 @@ body {
     margin-top: 40px;
     height: 350px;
     width: 250px;
+}
+
+.dropdownBtn{
+    background-color:#457777;
+}
+
+.material-icons{
+    background-color:#457777;
+}
+
+#save-button{
+    background-color:#457777;
+    position: absolute;
+    right:    0;
+    top:   0;
+    margin-right: 5px;
+    margin-top: 5px;
+}
+
+.dropdown-button{
+    background-color:#457777;
+}
+
+#dropdown-content{
+    background-color:#457777;
+}
+
+.skills-container{
+    padding-top: 20px;
+    padding-left: 10px;
+    text-align: left;
+    height: 600px;
+    width: 205px;
+    background-color:white;
+    border:3px;
+    border-color: black;
+    border-style:solid; 
+    overflow: auto;
+}
+
+#arcana{
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#skill{
+    width: 30px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0cm;
+}
+
+.card-content{
+    padding:0px !important;
+    padding-top: 4px !important;
+}
+
+input{
+    font-size: large !important;
+    height: 17px !important;
+}
+
+ul{
+    margin:0px !important;
+}
+
+p{
+    margin:0px !important;
 }
