@@ -260,8 +260,6 @@ p{
     flex-direction: column;
     margin-left: 50px;
     margin-top: 75px;
-    font: rgb(223, 221, 221) !important;
-    
 }
 
 #str{
@@ -269,66 +267,72 @@ p{
     height: 100px;
     width: 100px;
     background-color: black;
-    font: rgb(223, 221, 221) !important;
     margin-left: 5px;
     margin-bottom: 35px;
     font-family: 'Molle', cursive;
+    color:   rgb(128, 161, 141);
     text-align: center;
+    font-size: 18px;
 }
 #dex{
     grid-column: 1;
     height: 100px;
     width: 100px;
     background-color: black;
-    font: rgb(223, 221, 221);
     margin-left: 5px;
     margin-bottom: 35px;
     font-family: 'Molle', cursive;
+    color:   rgb(128, 161, 141);
     text-align: center;
+    font-size: 18px;
 }
 #con{
     grid-column: 1;
     height: 100px;
     width: 100px;
     background-color: black;
-    font: rgb(223, 221, 221);
     margin-left: 5px;
     margin-bottom: 35px;
     font-family: 'Molle', cursive;
+    color:  rgb(128, 161, 141);
     text-align: center;
+    font-size: 16px;
 }
 #intl{
     grid-column: 1;
     height: 100px;
     width: 100px;
     background-color: black;
-    font: rgb(223, 221, 221);
     margin-left: 5px;
     margin-bottom: 35px;
     font-family: 'Molle', cursive;
+    color:  rgb(128, 161, 141);
     text-align: center;
+    font-size: 16px;
 }
 #wis{
     grid-column: 1;
     height: 100px;
     width: 100px;
     background-color: black;
-    font: rgb(223, 221, 221);
     margin-left: 5px;
     margin-bottom: 35px;
     font-family: 'Molle', cursive;
+    color:  rgb(128, 161, 141);
     text-align: center;
+    font-size: 18px;
 }
 #charis{
     grid-column: 1;
     height: 100px;
     width: 100px;
     background-color: black;
-    font: rgb(223, 221, 221);
     margin-left: 5px;
     margin-bottom: 35px;
     font-family: 'Molle', cursive;
+    color:  rgb(128, 161, 141);
     text-align: center;
+    font-size: 18px;
 }
 
 
@@ -336,5 +340,40 @@ p{
     height: 75px !important;
     font-family: 'Molle', cursive;
     text-align: center;
-    font: rgb(223, 221, 221) !important;
+    font-size: 40px !important;
+}
+
+#dex2{
+    height: 75px !important;
+    font-family: 'Molle', cursive;
+    text-align: center;
+    font-size: 40px !important;
+}
+
+#con2{
+    height: 75px !important;
+    font-family: 'Molle', cursive;
+    text-align: center;
+    font-size: 40px !important;
+}
+
+#intl2{
+    height: 75px !important;
+    font-family: 'Molle', cursive;
+    text-align: center;
+    font-size: 40px !important;
+}
+
+#wis2{
+    height: 75px !important;
+    font-family: 'Molle', cursive;
+    text-align: center;
+    font-size: 40px !important;
+}
+
+#charis2{
+    height: 75px !important;
+    font-family: 'Molle', cursive;
+    text-align: center;
+    font-size: 40px !important;
 }

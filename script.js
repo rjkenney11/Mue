@@ -34,64 +34,32 @@ $(document).ready(function () {
             var prof = localStorage.getItem("prof", prof);
             $("#pb").val(prof);
         }
-        //character local storage
-        if (localStorage.getItem("character") != "undefined") {
-            var character = localStorage.getItem("character", character);
-            $("#char-name").val(character);
+        //character stats local storage
+        if (localStorage.getItem("str2") != "undefined") {
+            var str2 = localStorage.getItem("str2", str2);
+            $("#str2").val(str2);
         }
-        //class local storage
-        if (localStorage.getItem("classbtn") != "Classarrow_drop_down") {
-            var classbtn = localStorage.getItem("classbtn", $('.classbtn').text());
-            $('.classbtn').text(classbtn);
-            classCheck = $('.classbtn').text();
-            fillSpell();
-
+        if (localStorage.getItem("dex2") != "undefined") {
+            var dex2 = localStorage.getItem("dex2", dex2);
+            $("#dex2").val(dex2);
         }
-        //level local storage
-        if (localStorage.getItem("levelbtn") != "Levelarrow_drop_down") {
-            var levelbtn = localStorage.getItem("levelbtn", $('.levelbtn').text());
-            $('.levelbtn').text(levelbtn);
+        if (localStorage.getItem("con2") != "undefined") {
+            var con2 = localStorage.getItem("con2", con2);
+            $("#con2").val(con2);
         }
-        //race local storage
-        if (localStorage.getItem("racebtn") != "Racearrow_drop_down") {
-            var racebtn = localStorage.getItem("racebtn", $('.racebtn').text());
-            $('.racebtn').text(racebtn);
+        if (localStorage.getItem("intl2") != "undefined") {
+            var intl2 = localStorage.getItem("intl2", intl2);
+            $("#intl2").val(intl2);
         }
-        //background local storage
-        if (localStorage.getItem("backbtn") != "Backgroundarrow_drop_down") {
-            var backbtn = localStorage.getItem("backbtn", $('.backbtn').text());
-            $('.backbtn').text(backbtn);
+        if (localStorage.getItem("wis2") != "undefined") {
+            var wis2 = localStorage.getItem("wis2", wis2);
+            $("#wis2").val(wis2);
         }
-        //strength local storage
-        if (localStorage.getItem("strengthbtn") != "Scorearrow_drop_down") {
-            var strengthbtn = localStorage.getItem("strengthbtn", $('.strengthbtn').text());
-            $('.strengthbtn').text(strengthbtn);
+        if (localStorage.getItem("charis2") != "undefined") {
+            var charis2 = localStorage.getItem("charis2", charis2);
+            $("#charis2").val(charis2);
         }
-        //dexternity local storage
-        if (localStorage.getItem("DEXTERITYbtn") != "Scorearrow_drop_down") {
-            var DEXTERITYbtn = localStorage.getItem("DEXTERITYbtn", $('.DEXTERITYbtn').text());
-            $('.DEXTERITYbtn').text(DEXTERITYbtn);
-        }
-        //wisdom local storage
-        if (localStorage.getItem("WISDOMbtn") != "Scorearrow_drop_down") {
-            var WISDOMbtn = localStorage.getItem("WISDOMbtn", $('.WISDOMbtn').text());
-            $('.WISDOMbtn').text(WISDOMbtn);
-        }
-        //constitution local storage
-        if (localStorage.getItem("CONSTITUTIONbtn") != "Scorearrow_drop_down") {
-            var CONSTITUTIONbtn = localStorage.getItem("CONSTITUTIONbtn", $('.CONSTITUTIONbtn').text());
-            $('.CONSTITUTIONbtn').text(CONSTITUTIONbtn);
-        }
-        //charisma local storage
-        if (localStorage.getItem("CHARISMAbtn") != "Scorearrow_drop_down") {
-            var CHARISMAbtn = localStorage.getItem("CHARISMAbtn", $('.CHARISMAbtn').text());
-            $('.CHARISMAbtn').text(CHARISMAbtn);
-        }
-        //intlligence local storage
-        if (localStorage.getItem("INTELLIGENCEbtn") != "Scorearrow_drop_down") {
-            var INTELLIGENCEbtn = localStorage.getItem("INTELLIGENCEbtn", $('.INTELLIGENCEbtn').text());
-            $('.INTELLIGENCEbtn').text(INTELLIGENCEbtn);
-        }
+ 
         //weapon local storage
         if (localStorage.getItem("weaponbtn") != "weapon typearrow_drop_down") {
             var weaponDropDown = localStorage.getItem("weaponbtn", $('.weaponbtn').text());
@@ -126,114 +94,6 @@ $(document).ready(function () {
     }
     //open the spell modal
     $('#addModel').modal();
-    //fill weapon drop down
-    fillWeapon();
-    //an array for the ability score
-    var standardArray = ["-5", "-4", "-3", "-2", "-1", "0", "+1", "+2", "+3", "+4", "+5", "+6", "+7", "+8", "+9", "+10"];
-    //function for the classes
-    fillClass();
-    //function to fill the strength drop down
-    $('#strengthDrop').on("click", function () {
-        $("#strengthDropList").empty();
-        for (var i = 0; i < standardArray.length; i++) {
-            var li = "<li>" + standardArray[i] + "</li>";
-            $("#strengthDropList").append(li);
-        }
-    });
-    //function when the strength drop down is clicked
-    $('#strengthDropList').on("click", function (event) {
-        a = event.target.innerText;
-        $('.strengthbtn').text(a);
-    });
-    //function to fill the Dexternity drop down
-    $('#DEXTERNITYDrop').on("click", function () {
-        //  alert("hello");
-        $("#DEXTERITYDropList").empty();
-        for (var i = 0; i < standardArray.length; i++) {
-            var li = "<li>" + standardArray[i] + "</li>";
-            $("#DEXTERITYDropList").append(li);
-        }
-    });
-    //function when the dexternity drop down is clicked
-    $('#DEXTERITYDropList').on("click", function (event) {
-        a = event.target.innerText;
-        $('.DEXTERITYbtn').text(a);
-    });
-    //function to fill the constitution drop down
-    $('#CONSTITUTIONDrop').on("click", function () {
-        $("#CONSTITUTIONDropList").empty();
-        for (var i = 0; i < standardArray.length; i++) {
-            var li = "<li>" + standardArray[i] + "</li>";
-            $("#CONSTITUTIONDropList").append(li);
-        }
-    });
-    //function when the constitution drop down is clicked
-    $('#CONSTITUTIONDropList').on("click", function (event) {
-        a = event.target.innerText;
-        $('.CONSTITUTIONbtn').text(a);
-    });
-    //function to fill the intelligence drop down
-    $('#INTELLIGENCEDrop').on("click", function () {
-        $("#INTELLIGENCEDropList").empty();
-        for (var i = 0; i < standardArray.length; i++) {
-            var li = "<li>" + standardArray[i] + "</li>";
-            $("#INTELLIGENCEDropList").append(li);
-        }
-    });
-    //function when the intelligence drop down is clicked
-    $('#INTELLIGENCEDropList').on("click", function (event) {
-        a = event.target.innerText;
-        $('.INTELLIGENCEbtn').text(a);
-    });
-
-    //function to fill the wisdom drop down
-    $('#WISDOMDrop').on("click", function () {
-        $("#WISDOMDropList").empty();
-        for (var i = 0; i < standardArray.length; i++) {
-            var li = "<li>" + standardArray[i] + "</li>";
-            $("#WISDOMDropList").append(li);
-        }
-    });
-    //function when the wisdom drop down is clicked
-    $('#WISDOMDropList').on("click", function (event) {
-        a = event.target.innerText;
-        $('.WISDOMbtn').text(a);
-    });
-    //function to fill the chrisma drop down
-    $('#CHARISMADrop').on("click", function () {
-        $("#CHARISMADropList").empty();
-        for (var i = 0; i < standardArray.length; i++) {
-            var li = "<li>" + standardArray[i] + "</li>";
-            $("#CHARISMADropList").append(li);
-        }
-    });
-    //function when the chrisma drop down is clicked
-    $('#CHARISMADropList').on("click", function (event) {
-        a = event.target.innerText;
-        $('.CHARISMAbtn').text(a);
-    });
-    //function when the race drop down is clicked    
-    $('#raceDrop').on("click", function (event) {
-        a = event.target.innerText;
-        $('.racebtn').text(a)
-    });
-    //function when the class drop down is clicked    
-    $('#classDrop').on("click", function (event) {
-        classCheck = event.target.innerText;
-        $('.classbtn').text(classCheck);
-        $("#spellDrop").empty();
-        fillSpell();
-    });
-    //function when the background drop down is clicked
-    $('#backDrop').on("click", function (event) {
-        a = event.target.innerText;
-        $('.backbtn').text(a)
-    });
-    //function when the level drop down is clicked    
-    $('#levelDrop').on("click", function (event) {
-        a = event.target.innerText;
-        $('.levelbtn').text(a)
-    });
     //function to fill the class using api get method    
     function fillClass() {
         const pathUrl = "https://api.open5e.com/classes/";
@@ -252,42 +112,6 @@ $(document).ready(function () {
             }
         });
     }
-    //Function to roll a D20 using diceapi
-    $('#click-to-roll').on("click", function (event) {
-        var diceURL = "https://cors-anywhere.herokuapp.com/http://roll.diceapi.com/json/d20/"
-        var rollValue = -1
-        $.ajax({
-            url: diceURL,
-            type: "GET",
-            dataType: "json",
-            success: function (result) {
-                rollValue = result.dice[0].value
-                console.log(rollValue)
-                var resultModal = document.getElementById('diceResult')
-                resultModal.innerHTML = "You rolled a " + rollValue
-            },
-            error: function (result) {
-            }
-        });
-        $('.modal').modal();
-    });
-
-    //function to fill the race using api get method    
-    var raceUrl = "https://api.open5e.com/races/";
-    $.ajax({
-        url: raceUrl,
-        type: "GET",
-        dataType: "json",
-        success: function (result) {
-            for (var i = 0; i < result.results.length; i++) {
-                var li = "<li>" + result.results[i].name + "</li>";
-                $("#raceDrop").append(li);
-            }
-        },
-        error: function (result) {
-
-        }
-    });
 
     function fillSpell() {
         var p = "";
@@ -402,14 +226,24 @@ $(document).ready(function () {
         var speed = $("#sp").val();
         var initiative = $("#int").val();
         var prof = $("#pb").val();
-        var character = $("#char-name").val();
+        var str2 = $("#str2").val();
+        var dex2 = $("#dex2").val();
+        var con2 = $("#con2").val();
+        var intl2 = $("#intl2").val();
+        var wis2 = $("#wis2").val();
+        var charis2 = $("#charis2").val();
         localStorage.setItem("hitPoint", hitPoint);
         localStorage.setItem("armorClass", armorClass);
         localStorage.setItem("level", level);
         localStorage.setItem("speed", speed);
         localStorage.setItem("initiative", initiative);
         localStorage.setItem("prof", prof);
-        localStorage.setItem("character", character);
+        localStorage.setItem("str2", str2);
+        localStorage.setItem("dex2", dex2);
+        localStorage.setItem("con2", con2);
+        localStorage.setItem("intl2", intl2);
+        localStorage.setItem("wis2", wis2);
+        localStorage.setItem("charis2", charis2);
         localStorage.setItem("classbtn", $('.classbtn').text());
         localStorage.setItem("spellbtn", $('.spellbtn').text());
         var levelbtn = $("#char-name").val();
