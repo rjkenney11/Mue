@@ -55,11 +55,86 @@ $(document).ready(function () {
             var wis2 = localStorage.getItem("wis2", wis2);
             $("#wis2").val(wis2);
         }
-        if (localStorage.getItem("charis2") != "undefined") {
-            var charis2 = localStorage.getItem("charis2", charis2);
-            $("#charis2").val(charis2);
+        if (localStorage.getItem("charisma2") != "undefined") {
+            var charisma2 = localStorage.getItem("charisma2", charisma2);
+            $("#charisma2").val(charisma2);
+        };
+
+        //skills local storage
+        if (localStorage.getItem("acrobatics2") != "undefined") {
+            var acrobatics2 = localStorage.getItem("acrobatics2", acrobatics2);
+            $("#acrobatics2").val(acrobatics2);
         }
- 
+        if (localStorage.getItem("animal2") != "undefined") {
+            var animal2 = localStorage.getItem("animal2", animal2);
+            $("#animal2").val(animal2);
+        }
+        if (localStorage.getItem("arcana2") != "undefined") {
+            var arcana2 = localStorage.getItem("arcana2", arcana2);
+            $("#arcana2").val(arcana2);
+        }
+        if (localStorage.getItem("athletics2") != "undefined") {
+            var athletics2 = localStorage.getItem("athletics2", athletics2);
+            $("#athletics2").val(athletics2);
+        }
+        if (localStorage.getItem("deception2") != "undefined") {
+            var deception2 = localStorage.getItem("deception2", deception2);
+            $("#deception2").val(deception2);
+        }
+        if (localStorage.getItem("history2") != "undefined") {
+            var history2 = localStorage.getItem("history2", history2);
+            $("#history2").val(history2);
+        }
+        if (localStorage.getItem("insight2") != "undefined") {
+            var insight2 = localStorage.getItem("insight2", insight2);
+            $("#insight2").val(insight2);
+        }
+        if (localStorage.getItem("intimidation2") != "undefined") {
+            var intimidation2 = localStorage.getItem("intimidation2", intimidation2);
+            $("#intimidation2").val(intimidation2);
+        }
+        if (localStorage.getItem("invest2") != "undefined") {
+            var invest2 = localStorage.getItem("invest2", invest2);
+            $("#invest2").val(invest2);
+        }
+        if (localStorage.getItem("med2") != "undefined") {
+            var med2 = localStorage.getItem("med2", med2);
+            $("#med2").val(med2);
+        }
+        if (localStorage.getItem("nature2") != "undefined") {
+            var nature2 = localStorage.getItem("nature2", nature2);
+            $("#nature2").val(nature2);
+        }
+        if (localStorage.getItem("percep2") != "undefined") {
+            var percep2 = localStorage.getItem("percep2", percep2);
+            $("#percep2").val(percep2);
+        }
+        if (localStorage.getItem("perform2") != "undefined") {
+            var perform2 = localStorage.getItem("perform2", perform2);
+            $("#perform2").val(perform2);
+        }
+        if (localStorage.getItem("pers2") != "undefined") {
+            var pers2 = localStorage.getItem("pers2", pers2);
+            $("#pers2").val(pers2);
+        }
+        if (localStorage.getItem("rel2") != "undefined") {
+            var rel2 = localStorage.getItem("rel2", rel2);
+            $("#rel2").val(rel2);
+        }
+        if (localStorage.getItem("sleight2") != "undefined") {
+            var sleight2 = localStorage.getItem("sleight2", sleight2);
+            $("#sleight2").val(sleight2);
+        }
+        if (localStorage.getItem("stealth2") != "undefined") {
+            var stealth2 = localStorage.getItem("stealth2", stealth2);
+            $("#stealth2").val(stealth2);
+        }
+        if (localStorage.getItem("surv2") != "undefined") {
+            var surv2 = localStorage.getItem("surv2", surv2);
+            $("#surv2").val(surv2);
+        }
+
+
         //weapon local storage
         if (localStorage.getItem("weaponbtn") != "weapon typearrow_drop_down") {
             var weaponDropDown = localStorage.getItem("weaponbtn", $('.weaponbtn').text());
@@ -231,7 +306,26 @@ $(document).ready(function () {
         var con2 = $("#con2").val();
         var intl2 = $("#intl2").val();
         var wis2 = $("#wis2").val();
-        var charis2 = $("#charis2").val();
+        var charisma2 = $("#charisma2").val();
+        var arcana2 = $("#arcana2").val();
+        var acrobatics2 = $("#acrobatics2").val();
+        var animal2 = $("#animal2").val();
+        var athletics2 = $("#athletics2").val();
+        var deception2 = $("#deception2").val();
+        var history2 = $("#history2").val();
+        var insight2 = $("#insight2").val();
+        var intimidation2 = $("#intimidation2").val();
+        var invest2 = $("#invest2").val();
+        var med2 = $("#med2").val();
+        var nature2 = $("#nature2").val();
+        var percep2 = $("#percep2").val();
+        var perform2 = $("#perform2").val();
+        var pers2 = $("#pers2").val();
+        var rel2 = $("#rel2").val();
+        var sleight2 = $("#sleight2").val();
+        var stealth2 = $("#stealth2").val();
+        var surv2 = $("#surv2").val();
+    
         localStorage.setItem("hitPoint", hitPoint);
         localStorage.setItem("armorClass", armorClass);
         localStorage.setItem("level", level);
@@ -243,30 +337,32 @@ $(document).ready(function () {
         localStorage.setItem("con2", con2);
         localStorage.setItem("intl2", intl2);
         localStorage.setItem("wis2", wis2);
-        localStorage.setItem("charis2", charis2);
-        localStorage.setItem("classbtn", $('.classbtn').text());
+        localStorage.setItem("charisma2", charisma2);
+        localStorage.setItem("arcana2", arcana2);
+        localStorage.setItem("acrobatics2", acrobatics2);
+        localStorage.setItem("animal2", animal2);
+        localStorage.setItem("athletics2", athletics2);
+        localStorage.setItem("deception2", deception2);
+        localStorage.setItem("history2", history2);
+        localStorage.setItem("insight2", insight2);
+        localStorage.setItem("intimidation2", intimidation2);
+        localStorage.setItem("invest2", invest2);
+        localStorage.setItem("med2", med2);
+        localStorage.setItem("nature2", nature2);
+        localStorage.setItem("percep2", percep2);
+        localStorage.setItem("perform2", perform2);
+        localStorage.setItem("pers2", pers2);
+        localStorage.setItem("rel2", rel2);
+        localStorage.setItem("sleight2", sleight2);
+        localStorage.setItem("stealth2", stealth2);
+        localStorage.setItem("surv2", surv2);
         localStorage.setItem("spellbtn", $('.spellbtn').text());
-        var levelbtn = $("#char-name").val();
-        localStorage.setItem("levelbtn", $('.levelbtn').text());
-        localStorage.setItem("racebtn", $('.racebtn').text());
-        localStorage.setItem("backbtn", $('.backbtn').text());
-        localStorage.setItem("strengthbtn", $('.strengthbtn').text());
-        localStorage.setItem("DEXTERITYbtn", $('.DEXTERITYbtn').text());
-        localStorage.setItem("WISDOMbtn", $('.WISDOMbtn').text());
-        localStorage.setItem("CONSTITUTIONbtn", $('.CONSTITUTIONbtn').text());
-        localStorage.setItem("CHARISMAbtn", $('.CHARISMAbtn').text());
-        localStorage.setItem("INTELLIGENCEbtn", $('.INTELLIGENCEbtn').text());
+        
         $('input[type=checkbox]').each(function () {
             if (this.checked) {
                 localStorage.setItem($(this)[0].id, $(this).val());
             }
         });
-
-        localStorage.setItem("subject", $('#subject').val());
-        localStorage.setItem("weapon-name", $('#weapon-name').val());
-        localStorage.setItem("attack-bonus", $('#attack-bonus').val());
-        localStorage.setItem("damage-dice", $('#damage-dice').val());
-        localStorage.setItem("weaponbtn", $('.weaponbtn').text());
 
     });
 });

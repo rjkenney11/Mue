@@ -225,16 +225,76 @@ body {
     font: black;
 }
 
-#arcana{
-    margin-right: auto;
-    margin-left: auto;
+#arcana2{
+    width: 30px;
 }
 
-#skill{
+#acrobatics2{
     width: 30px;
-    margin-right: auto;
-    margin-left: auto;
-    padding: 0cm;
+}
+
+#animal2{
+    width: 30px;
+}
+
+#athletics2{
+    width: 30px;
+}
+
+#deception2{
+    width: 30px;
+}
+
+#history2{
+    width: 30px;
+}
+
+#insight2{
+    width: 30px;
+}
+
+#intimidation2{
+    width: 30px;
+}
+
+#invest2{
+    width: 30px;
+}
+
+#med2{
+    width: 30px;
+}
+
+#nature2{
+    width: 30px;
+}
+
+#percep2{
+    width: 30px;
+}
+
+#perform2{
+    width: 30px;
+}
+
+#pers2{
+    width: 30px;
+}
+
+#rel2{
+    width: 30px;
+}
+
+#sleight2{
+    width: 30px;
+}
+
+#stealth2{
+    width: 30px;
+}
+
+#surv2{
+    width: 30px;
 }
 
 .card-content{
@@ -259,12 +319,17 @@ p{
     grid-column: 1;
     flex-direction: column;
     margin-left: 50px;
-    margin-top: 75px;
+    margin-top: 15px;
+}
+
+label{
+    margin-bottom: 0px !important;
+    padding: 0px !important;
 }
 
 #str{
     grid-column: 1;
-    height: 100px;
+    height: 120px;
     width: 100px;
     background-color: black;
     margin-left: 5px;
@@ -276,7 +341,7 @@ p{
 }
 #dex{
     grid-column: 1;
-    height: 100px;
+    height: 120px;
     width: 100px;
     background-color: black;
     margin-left: 5px;
@@ -288,7 +353,7 @@ p{
 }
 #con{
     grid-column: 1;
-    height: 100px;
+    height: 120px;
     width: 100px;
     background-color: black;
     margin-left: 5px;
@@ -300,7 +365,7 @@ p{
 }
 #intl{
     grid-column: 1;
-    height: 100px;
+    height: 120px;
     width: 100px;
     background-color: black;
     margin-left: 5px;
@@ -312,7 +377,7 @@ p{
 }
 #wis{
     grid-column: 1;
-    height: 100px;
+    height: 120px;
     width: 100px;
     background-color: black;
     margin-left: 5px;
@@ -322,9 +387,9 @@ p{
     text-align: center;
     font-size: 18px;
 }
-#charis{
+#charisma{
     grid-column: 1;
-    height: 100px;
+    height: 120px;
     width: 100px;
     background-color: black;
     margin-left: 5px;
@@ -371,7 +436,7 @@ p{
     font-size: 40px !important;
 }
 
-#charis2{
+#charisma2{
     height: 75px !important;
     font-family: 'Molle', cursive;
     text-align: center;
