@@ -1,9 +1,9 @@
 $(document).ready(function () {
 
-    $("#luckyBtn").on("click", function () {
-        var luckyPic = "https://user-images.githubusercontent.com/74163812/109253869-b9d27080-77be-11eb-822c-822861bee845.png"
-        document.getElementById('luckyPic').src = luckyPic.replace('90x90', '225x225');
-    })
+    // $("#luckyBtn").on("click", function () {
+    //     var luckyPic = "https://user-images.githubusercontent.com/74163812/109253869-b9d27080-77be-11eb-822c-822861bee845.png"
+    //     document.getElementById('luckyPic').src = luckyPic.replace('90x90', '225x225');
+    // })
 
 
 
@@ -146,6 +146,29 @@ if (localStorage.length != 0) {
         var subject = localStorage.getItem("subject", subject);
         $("#subject").val(subject);
     }
+
+    if (localStorage.getItem("lvl1") != "undefined") {
+        var subject = localStorage.getItem("lvl1", lvl1);
+        $("#lvl1").text(lvl1);
+    }
+
+    if (localStorage.getItem("lvl2") != "undefined") {
+        var subject = localStorage.getItem("lvl2", lvl2);
+        $("#lvl2").text(lvl2);
+    }
+
+    if (localStorage.getItem("lucky") != "undefined") {
+        var subject = localStorage.getItem("lucky", lucky);
+        $("#lucky").text(lucky);
+    }
+
+    if (localStorage.getItem("summon") != "undefined") {
+        var subject = localStorage.getItem("summon", summon);
+        $("#summon").text(summon);
+    }
+
+    
+
 
 
     //weapon local storage
@@ -338,6 +361,10 @@ $("#save-button").on("click", function () {
     var stealth2 = $("#stealth2").val();
     var surv2 = $("#surv2").val();
     var subject = $("#subject").val();
+    var lvl1 = $("#lvl1").text();
+    var lvl2 = $("#lvl2").text();
+    var lucky = $("#lucky").text();
+    var summon = $("#summon").text();
 
     localStorage.setItem("hitPoint", hitPoint);
     localStorage.setItem("armorClass", armorClass);
@@ -370,6 +397,10 @@ $("#save-button").on("click", function () {
     localStorage.setItem("stealth2", stealth2);
     localStorage.setItem("surv2", surv2);
     localStorage.setItem("subject", subject);
+    localStorage.setItem("lvl1", lvl1);
+    localStorage.setItem("lvl2", lvl2);
+    localStorage.setItem("lucky", lucky);
+    localStorage.setItem("summon", summon);
     localStorage.setItem("spellbtn", $('.spellbtn').text());
 
     $('input[type=checkbox]').each(function () {

@@ -453,7 +453,7 @@ label{
     margin-left: 30px;
 }
 
-.summon-container{
+.spellslot-container{
     width: 440px;
     height: 40px;
     background-color: black;
@@ -465,16 +465,28 @@ label{
     margin-bottom: 20px;
 }
 
-.lucky{
+.luckyBtn{
     margin-left: 15px;
     margin-top: 4px;
-    background-color: rgb(128, 161, 141);;
+    background-color: rgb(128, 161, 141);
 }
 
 .summons{
+    margin-left: 55px;
+    margin-top: 4px;
+    background-color: rgb(128, 161, 141);
+}
+
+.lvl1btn{
     margin-left: 15px;
     margin-top: 4px;
-    background-color: rgb(128, 161, 141);;
+    background-color: rgb(128, 161, 141);
+}
+
+.lvl2btn{
+    margin-left: 55px;
+    margin-top: 4px;
+    background-color: rgb(128, 161, 141);
 }
 
 
@@ -513,4 +525,50 @@ label{
 #addModel{
     width: 400px; 
    background-color:rgb(128, 161, 141) ;
+}
+
+#howmanyLucky{
+    margin-top:10px;
+    width: 60px;
+    font-size: 16px;
+    color: white;
+}
+
+#howmanySummons{
+    margin-top:10px;
+    width: 50px;
+    font-size: 16px;
+    color: white;
+}
+
+#howmanyL1{
+    margin-top:10px;
+    width: 50px;
+    font-size: 16px;
+    color: white;
+}
+
+#howmanyL2{
+    margin-top:10px;
+    width: 50px;
+}
+
+.lvl1{
+    font-size: 16px;
+    color: white;
+}
+
+.lucky{
+    font-size: 16px;
+    color: white;
+}
+
+.summon{
+    font-size: 16px;
+    color: white;
+}
+
+.lvl2{
+    font-size: 16px;
+    color: white;
 }

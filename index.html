@@ -284,22 +284,35 @@
                 </div>
 
                 <div class="col-2">
-                        <div class="lucky-container">
-                            <div class="lucky-card">
-                                <button class="lucky" id="luckyBtn"> Lucky uses: </button>
+                    <div class="lucky-container">
+                        <div class="lucky-card">
+                            <div class="row">
+                                <button class="luckyBtn" id="luckyBtn"> Lucky uses: </button>
+                                <form id="howmanyLucky">
+                                    <input type="text" class="lucky" id="lucky">
+                                </form>
+                                <button class="summons"> Summons used: </button>
+                                <form id="howmanySummons">
+                                    <input type="text" class="summon" id="summon">
+                                </form>
                             </div>
-
-                            <img id="luckyPic"> </img>
-                        </div>
-                
-
-                    <div class="summon-container">
-                        <div class="summon-card">
-                            <button class="summons"> Summons used: </button>
                         </div>
                     </div>
 
-
+                    <div class="spellslot-container">
+                        <div class="level1">
+                            <div class="row">
+                                <button class="lvl1btn" id="lvl1btn"> Level 1 uses: </button>
+                                <form id="howmanyL1">
+                                    <input type="text" class="lvl1" id="lvl1">
+                                </form>
+                                <button class="lvl2btn" id="lvl2btn"> Level 2 uses: </button>
+                                <form id="howmanyL2">
+                                    <input type="text" class="lvl2" id="lvl2">
+                                </form>
+                            </div>
+                        </div>
+                    </div>
 
                     <div class="notes-container">
                         <form>
@@ -310,8 +323,8 @@
 
                     <div>
                         <div id="addModel" class="modal black-text"></div>
-                        <a class='dropdown-button btn dropdownBtn spellbtn' href='#'
-                            data-activates='spellDrop'>spells<i class="material-icons right">arrow_drop_down</i></a>
+                        <a class='dropdown-button btn dropdownBtn spellbtn' href='#' data-activates='spellDrop'>spells<i
+                                class="material-icons right">arrow_drop_down</i></a>
                         <ul id='spellDrop' class='dropdown-content'>
                         </ul>
                     </div>
@@ -320,11 +333,7 @@
             </div>
         </div>
     </div>
-    </div>
 
-
-    </div>
-    </div>
 
     <!--Save Button-->
     <a class="waves-effect waves-light btn" id="save-button">Save Mue</a>
